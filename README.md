@@ -6,3 +6,19 @@
 1.header:mint-ui
 2.底部 tabbar
 3.中间：router-view
+
+#改造tabbar为router-link
+#设置路由高亮
+#点击tabbar路由连接展示对应路由组件
+#加载首页轮播图数据
+1.获取数据：使用vue-resource,cnpm i vue-resource -D
+2.main.js中，导入vue-resource:import VueResource from "vue-resource"
+安装：Vue.use(VueResource)
+3使用this.$http.get(webaddress).then(result=>{
+    if(){}else{}
+})
+4.获取的数据保存到data上：data(){
+    return{....}
+}
+5.使用v-for循环渲染每个item项
+
